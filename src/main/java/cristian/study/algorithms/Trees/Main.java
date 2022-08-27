@@ -80,6 +80,27 @@ public class Main {
         newBinaryTreeLL.deleteNode("N3");
         newBinaryTreeLL.levelOrder();
 
+
+
+        BinaryTreeArray binaryTreeArray = new BinaryTreeArray(6);
+        binaryTreeArray.insert("N1");
+        binaryTreeArray.insert("N2");
+        binaryTreeArray.insert("N3");
+        binaryTreeArray.insert("N4");
+        binaryTreeArray.insert("N5");
+        binaryTreeArray.preOrder(1);
+        System.out.println();
+        System.out.println("This is the inorder traversal ");binaryTreeArray.inOrder(1);
+        System.out.println();
+        binaryTreeArray.postOrder(1);
+        System.out.println();
+        binaryTreeArray.levelOrder();
+        System.out.println(binaryTreeArray.search("N3"));
+        System.out.println(binaryTreeArray.search("N10"));
+        System.out.println();
+        binaryTreeArray.delete  ("N2");
+        binaryTreeArray.levelOrder();
+
     }
 
 
