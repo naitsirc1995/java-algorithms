@@ -1,7 +1,6 @@
 package cristian.study.algorithms.Trees;
 
-import java.util.LinkedList;
-import java.util.Queue;
+
 
 public class Main {
     public static void main(String[] args)
@@ -67,6 +66,20 @@ public class Main {
         binaryTreeLL.levelOrder();
         System.out.println();
         binaryTreeLL.search("N7");
+        System.out.println();
+
+        BinaryTreeLL newBinaryTreeLL = new BinaryTreeLL();
+        newBinaryTreeLL.insert("N1");
+        newBinaryTreeLL.insert("N2");
+        newBinaryTreeLL.insert("N3");
+        newBinaryTreeLL.insert("N4");
+        newBinaryTreeLL.insert("N5");
+        newBinaryTreeLL.levelOrder();
+        System.out.println();
+        System.out.println("The deepest node is  " + newBinaryTreeLL.getDeepestNode().value);
+        newBinaryTreeLL.deleteNode("N3");
+        newBinaryTreeLL.levelOrder();
+
     }
 
 
