@@ -98,7 +98,7 @@ public class Main {
         System.out.println(binaryTreeArray.search("N3"));
         System.out.println(binaryTreeArray.search("N10"));
         System.out.println();
-        binaryTreeArray.delete  ("N2");
+        binaryTreeArray.delete("N2");
         binaryTreeArray.levelOrder();
 
     }

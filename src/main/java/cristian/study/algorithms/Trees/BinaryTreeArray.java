@@ -10,6 +10,7 @@ public class BinaryTreeArray {
     {
         lastUsedIndex = 0;
         arr = new String[size+1];
+
     }
 
     public boolean isFull()
